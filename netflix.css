@@ -87,7 +87,7 @@ body {
 #hero-text p {
     font-size: 1.5em; 
     margin: 0; 
-    margin-top: 10px; 
+    margin-top: 1px; 
     text-shadow: 
         1px 1px 0 rgba(0, 0, 0, 0.7), 
         -1px -1px 0 rgba(0, 0, 0, 0.7), 
@@ -100,6 +100,51 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
+.mn {
+    width: 80%;
+    text-align: left;
+  }
+
+  /* Title Styling */
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  /* Card Layout */
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  /* Card Styling */
+.box {
+    border-color: #3e3c3c;
+    border-radius: 15px;
+    padding: 20px;
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s;
+  }
+
+.box:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Text and Emoji Styling */
+.box p {
+    font-size: 1.1em;
+    margin: 0;
+    color: white;
+  }
+
+.box span {
+    font-size: 1.5em;
+  }
 
 .image-gallery {
     display: flex; 
@@ -119,6 +164,8 @@ body {
     display: flex; 
     align-items: center; 
     overflow-x: auto; 
+    overflow-y: hidden;
+    
 }
 
 .gallery-image {
@@ -150,6 +197,7 @@ body {
 .arrow:hover {
     color: #0056b3; 
 }
+
 .faq{
     margin-top: 20PX;
     margin-left: 50px;
